@@ -39,7 +39,7 @@ public class TopDAO {
         Statement stmt = null;
         ResultSet rs = null;
         
-        String sql = "SELECT days FROM testdb_booking.booking";  // 適切なSQLクエリを設定
+        String sql = "SELECT days FROM public.booking";  // 適切なSQLクエリを設定
 
         try {
             stmt = con.createStatement();

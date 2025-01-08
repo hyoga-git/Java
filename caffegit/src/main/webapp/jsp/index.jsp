@@ -69,7 +69,7 @@
     	<li>黄色は予約出来る数が少ないです。</li>
     	<li>✖︎は予約ができません。</li>
     	</ul>
-        <form action="/caffe/form"method="POST">
+      <form action="/caffegit/form"method="POST">
         <div id="calendar"></div> 
 		
         </form>

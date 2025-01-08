@@ -6,9 +6,9 @@ import java.sql.PreparedStatement;
 
 public class DAO {
 
-    private static final String URL = "jdbc:postgresql://localhost:5432/testdb";
-    private static final String USER = "postgres";
-    private static final String PASS = "0603";
+    private static final String URL = "dpg-ctuins0gph6c73er4q6g-a.oregon-postgres.render.com";
+    private static final String USER = "hyoga";
+    private static final String PASS = "PbTtS53Tgxu6xEjUd2qb7QdTlfGlbIMp";
     
     private PreparedStatement ps = null;
     
@@ -31,7 +31,7 @@ public class DAO {
 
     public boolean insert(String name, String days, String times, String number_people, String kids) {
         boolean success = false;
-        String sql = "INSERT INTO testdb_booking.booking (name, days, times, number_people, kids) VALUES (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO public.booking (name, days, times, number_people, kids) VALUES (?, ?, ?, ?, ?)";
 
         try {
             connect();  // DBに接続
