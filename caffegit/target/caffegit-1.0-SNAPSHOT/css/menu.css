@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  /* タブメニュー */
+  .tab__menu {
+    display: flex;
+    align-items: flex-end; /* メニューを下揃え&高さを調整 */
+    justify-content: center;
+    min-height: 50px; /* メニュー切替時にタブがズレないように */
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .tab__menu-item {
+    list-style: none;
+    width: 200px;
+    padding: 8px 5px; /* メニューに高さを付ける */
+    text-align: center;
+    margin-right: 6px;
+    background-color: #cdcdcd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    transition: all .3s; /* アニメーション */
+    border:1px solid black
+  }
+  
+  .tab__menu-item:last-of-type {
+    margin-right: 0px;
+  }
+  
+  /* is-activeがついている時のスタイル */
+  .tab__menu-item.is-active {
+    background-color: rgb(110, 87, 59);
+    color: #ffffff;
+    padding: 12px 5px;
+  }
+
+  /* タブパネル */
+.tab__panel {
+ width: 100%;
+}
+
+.tab__panel-box {
+  min-height: 400px; /* テキスト量が多くなっても対応できるように */
+  padding: 10px 30px;
+  border-radius:clamp(0rem, -0.757rem + 1.67vw, 1.25rem);
+}
+
+.tab__panel-box001 {
+  background-color: rgb(215, 153, 77);
+  border:1px solid black;
+  display: none;
+}
+
+.tab__panel-box002 {
+  background-color: rgb(179, 171, 161);
+  display: none;
+  border:1px solid black;
+}
+
+
+
+/* is-showがついている時のスタイル */
+.tab__panel-box.is-show {
+  display: block;
+}
+
+/* タブの中身のテキスト */
+
+.menu-text li{
+  text-align: center;
+    margin:40px auto;
+    list-style: none;
+    border-bottom: 2px dashed black;
+ 
+    width:clamp(13.125rem, 7.261rem + 12.96vw, 22.813rem);
+    font-size:clamp(0.8rem, 0.679rem + 0.27vw, 1rem);
+}
+.menu-text{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.615);
+    padding:20px;
+    margin:40px auto;
+   
+}
+.menu-text li:last-child{
+    border-bottom:none;
+}
+.menu-text small{
+    font-size:0.7rem;
+}
+
+
+
+@media screen and (max-width: 724px) {
+    .tab {
+       width:80%;
+        margin: 40px auto;
+      }
+}

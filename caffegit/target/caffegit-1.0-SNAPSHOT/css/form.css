@@ -1,0 +1,94 @@
+.bokking-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.bokking-container h2 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none; /* 見出しに下線を外す */
+}
+
+.bokking-container h3 {
+    font-size: 1.2rem;
+    color: #555555;
+    margin: 20px 0 10px;
+}
+
+.bokking-container input[type="text"],
+.bokking-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.bokking-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.bokking-container label {
+    font-size: 1rem;
+    color: #555555;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.bokking-container p {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+.bokking-container button {
+    display: block;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bokking-container button:hover {
+    background-color: #45a049;
+}
+
+.bokking-container div {
+    margin-bottom: 20px;
+}
+
+.bokking-container input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #4caf50;
+}
+
+/* モバイル対応 */
+@media screen and (max-width: 600px) {
+    .bokking-container {
+        padding: 20px;
+    }
+
+    .bokking-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .bokking-container button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
